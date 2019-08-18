@@ -13,4 +13,4 @@ jobs:
 
       - run:
           name: Test
-          command: main.run
+          command: ./main.run
