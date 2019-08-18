@@ -8,5 +8,5 @@ jobs:
       - checkout
 
       - run:
-        name: Test
-        command: ./run.sh
+          name: Test
+          command: ./run.sh
