@@ -8,5 +8,9 @@ jobs:
       - checkout
 
       - run:
+          name: Compile
+          command: g++ main.cpp -o main.run
+
+      - run:
           name: Test
-          command: ./run.sh
+	  command: main.run
