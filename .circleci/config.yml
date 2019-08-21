@@ -7,10 +7,13 @@ jobs:
     steps:
       - checkout
 
+#     - run:
+#         name: Compile
+#         command: g++ main.cpp -o main.run
+#
+#     - run:
+#         name: Test
+#         command: ./main.run
       - run:
-          name: Compile
-          command: g++ main.cpp -o main.run
-
-      - run:
-          name: Test
-          command: ./main.run
+          name: dependencies
+          command: gradle dependencies
