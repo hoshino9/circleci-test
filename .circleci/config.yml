@@ -3,6 +3,10 @@ jobs:
   build:
     docker:
       - image: openjdk:8-jdk
+      
+    woring_directory: ~/repo
+    environment:
+      - JVM_OPTS: -Xmx3200m
 
     steps:
       - checkout
@@ -16,4 +20,4 @@ jobs:
 #         command: ./main.run
       - run:
           name: dependencies
-          command: gradle dependencies
+          command: ./gradlew dependencies
